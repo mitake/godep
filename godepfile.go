@@ -109,7 +109,7 @@ func (g *Godeps) fill(pkgs []*Package, destImportPath string, fillTestImports bo
 	}
 	path = uniq(path)
 	debugln("uniq, unqualify'd path", path)
-	ps, err = LoadPackages(path...)
+	ps, err := LoadPackages(path...)
 	if err != nil {
 		return err
 	}
