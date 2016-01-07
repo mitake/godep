@@ -149,7 +149,7 @@ func save(pkgs []string) error {
 	debugln("Filtered projectPackages")
 	ppln(projA)
 
-	err = gnew.fill(a, dp.ImportPath)
+	err = gnew.fill(a, dp.ImportPath, saveT)
 	if err != nil {
 		return err
 	}
